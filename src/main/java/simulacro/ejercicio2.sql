@@ -70,7 +70,7 @@ SELECT
     DEREF(t.ciudadano_ref).nombre AS nombre_ciudadano,
     t.id_tramite,
     t.estado,
-    t.documentos AS documentos
+    t.documentos
 FROM
     Tramites t;
 
