@@ -84,10 +84,13 @@ BEGIN
     SET t.estado = 'resuelto'
     WHERE t.id_tramite = 1;
 
+    -- Indicar con un comentario como se deshacen los cambios
+    -- ROLLBACK: Deshace todos los cambios en caso de error
+    -- Debe ejecutarse antes del commit
+
     -- COMMIT: Confirma y hace permanentes los cambios
     COMMIT;
 
-    -- Indicar con un comentario como se deshacen los cambios
-    -- ROLLBACK: Deshace todos los cambios en caso de error
+
 END; -- Cierra el BEGIN
 / -- Obligatorio ponerlo para que ejecute el código
